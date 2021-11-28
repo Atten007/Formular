@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>Formular</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<form action="https://www.programmieren.de/wp-content/themes/programmieren_de/formular/form.php">
+	<div id="error-messages">
+	</div>
+
+
+
+
+
+		<div id="salutation">
+			<span>Anrede</span><br>
+			<label>
+				<input type="radio" name="salutation" value="Frau">Frau
+			</label>
+
+			<label>
+				<input type="radio" name="salutation" value="Herr">Herr
+			</label>
+		</div>
+
+		<br>
+
+		<label>
+			Vorname<br>
+			<input class="required-text" type="text" name="firstname" placeholder="Dein Vorname">
+		</label>
+
+		<br>
+
+		<label>
+			Nachname<br>
+			<input class="required-text" type="text" name="lastname" placeholder="Dein Nachname">
+		</label>
+
+		<br>
+
+		<label>
+			Nachricht<br>
+			<textarea class="required-text" name="message" placeholder="Bitte Schreibe hier deine Nachricht rein."></textarea>
+		</label>
+
+		<br>
+
+		<label>
+			Rolle<br>
+			<select name="role" class="required-text">
+				<option value="">Bitte auswählen</option>
+				<option value="Schüler:in">Schüler</option>
+				<option value="Student:in">Student</option>
+				<option value="Auszubildende:r">Auszubildender</option>
+			</select>
+		</label>
+
+		<input id="submit-button" type="submit" value="absenden">
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>
